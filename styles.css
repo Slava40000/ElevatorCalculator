@@ -1,0 +1,33 @@
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+.main-block{
+      background-color: lightblue;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+  }
+  main{
+    height: 200px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    overflow: auto;
+    flex-direction: column;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    background: rgb(235, 235, 235);
+    font-family: Helvetica, sans-serif;
+  }
+  main div {
+    width: 50%;
+    padding: 20px;
+    resize: both;
+    overflow: auto;
+  }
