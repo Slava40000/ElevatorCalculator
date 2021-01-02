@@ -3,13 +3,12 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
-    Text in head
 </head>
 
 <main>
 
-    <div>
-        I live on <input type="number" min="1" max="50" required> floor
+    <div class="level-block">      
+        I live on <input onchange="console.log('Вписано значение')" type="number" min="1" max="50" required> floor
     </div>
 
     <div>
@@ -17,8 +16,7 @@
         <!-- add here "number of rides" input field -->
     </div>
 
-    <!-- uncomment when lift speed selector will be ready 
-        <div>
+    <!-- <div>
         <p>Lift speed: <input type="range" min="1" max="10"></p>
     </div> -->
 
@@ -32,7 +30,14 @@
             </select> -->
         I spend <b>XX</b> minutes
     </div>
-
+    <div>
+        <input
+        value="Посчитать"
+        onmouseover="console.log('Навел мышку')"
+        onclick="console.log('Нажал кнопку -Посчитать-')"
+        type="button"
+        >
+    </div>
 </main>
 
 </html>
