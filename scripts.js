@@ -1,4 +1,1 @@
-// javascripts will be here
-// test test
-// а по-русски то можно, уважаемые ?
-// net, nelzya
+// nomer-etaja.addEventListener('input', e => span.innerText = e.target.value)

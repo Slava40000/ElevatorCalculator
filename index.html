@@ -8,17 +8,20 @@
 <main>
 
     <div class="level-block">      
-        I live on <input onchange="console.log('Вписано значение')" type="number" min="1" max="50" required> floor
+        I live on <input id="nomer-etaja" oninput="console.log(value, 'level')" type="number" min="1" max="100" required> floor
     </div>
 
     <div>
-        Each day I move in elevator 4 times
+        Each day I move in elevator 2 times
         <!-- add here "number of rides" input field -->
     </div>
 
-    <!-- <div>
-        <p>Lift speed: <input type="range" min="1" max="10"></p>
-    </div> -->
+    <div>
+        <p>Lift speed: 
+            <!-- <input type="range" min="1" max="10"> -->
+            <input id="elevators-speed" type="number" min="1" max="10">
+        </p>
+    </div>
 
     <div>
         Each Month
@@ -28,13 +31,13 @@
                 <option value="Month">Month</option>
                 <option value="Year">Year</option>
             </select> -->
-        I spend <b>XX</b> minutes
+        I spend <b>XX</b> seconds
     </div>
     <div>
         <input
         value="Посчитать"
-        onmouseover="console.log('Навел мышку')"
-        onclick="console.log('Нажал кнопку -Посчитать-')"
+        onclick="console.log
+        (document.getElementById('nomer-etaja').value*document.getElementById('elevators-speed').value*2*30, 'seconds')"
         type="button"
         >
     </div>
