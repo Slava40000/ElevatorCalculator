@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Elevator40000</title>
 </head>
 
 <main>
@@ -10,33 +12,34 @@
         Elevator Calculator
     </div>
     <div class="floor-block">
-        I live on
+        Я живу на
         <input id="floor-number" oninput="console.log('floor number', value)" type="number" min="1" max="100">
-        floor
+        этаже
     </div>
     <div class="rides-per-day-block">
-        Each day I move in elevator 2 times
-        <!-- add here "number of rides" input field -->
+        Каждый день я езжу на лифте
+        <input id="rides-per-day" type="number" min="1" max="100">
+        раз
     </div>
     <div class="speed-block">
         <!-- Elevator speed: -->
         <!-- <input type="range" min="1" max="10"> -->
-        Seconds on each floor:
+        Секунд на каждый этаж:
         <input id="elevators-speed" type="number" step="0.25" min="0" max="10">
     </div>
     <div class="results-block">
-        Each Month
+        Каждый месяц
         <!-- //uncomment this code when day/month selector will be ready
                 <select name="speed" id="speed"> 
                 <option value="Day">Day</option>
                 <option value="Month">Month</option>
                 <option value="Year">Year</option>
             </select> -->
-        I spend <b>XX</b> seconds
+        Я трачу <b>XX</b> секунд
     </div>
     <div class="count-results-button">
         <input value="Count"
-            onclick="console.log(document.getElementById('floor-number').value*document.getElementById('elevators-speed').value*2*30, 'seconds')"
+            onclick="CalculateTime()"
             type="button">
     </div>
 </main>
