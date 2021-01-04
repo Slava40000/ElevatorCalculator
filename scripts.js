@@ -4,5 +4,6 @@
         let floor = document.getElementById('floor-number').value;
         let speed = document.getElementById('elevators-speed').value;
         let rides = document.getElementById('rides-per-day').value;
-        alert("Каждый месяц " + floor*speed*rides*30 + " секунд");
+        let days = document.getElementById('trips-in-x-days').value;
+        alert("Столько времени я еду в лифте " + floor*speed*rides*days + " секунд");
 }
