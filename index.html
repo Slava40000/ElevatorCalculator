@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
-    <title>Elevator40000</title>
+    <title>Elevator 40000</title>
 </head>
 
 <main>
@@ -13,13 +13,17 @@
     </div>
     <div class="floor-block">
         Я живу на
+<<<<<<< HEAD
         <input id="floor-number" oninput="console.log('floor number', value)" type="number" min="1" max="20">
+=======
+        <input id="floor-number" type="number" min="1" max="100">
+>>>>>>> 711aff66c90b4bc4dac7fe9e2844877ed5b770d6
         этаже
     </div>
     <div class="rides-per-day-block">
         Каждый день я езжу на лифте
         <input id="rides-per-day" type="number" min="1" max="100">
-        раз
+        раз(а)
     </div>
     <div class="speed-block">
         <!-- Elevator speed: -->
@@ -27,6 +31,7 @@
         Секунд на каждый этаж:
         <input id="elevators-speed" type="number" step="0.25" min="0" max="10">
     </div>
+<<<<<<< HEAD
     <div class="xdays-block">
         За столько дней:
         <input id="trips-in-x-days" type="number"  min="1" max="100">
@@ -39,13 +44,25 @@
                 <option value="Day">Day</option>
                 <option value="Month">Month</option>
                 <option value="Year">Year</option>
+=======
+    <div class="number-of-days-block">
+        Показать результат за
+        <input id="number-of-days" type="number" min="1" max="100000">
+        дней
+        <!-- //селектор для день/месяц/год
+                <select name="counter" id="speed"> 
+                <option value="1">Day</option>
+                <option value="30">Month</option>
+                <option value="365">Year</option>
+>>>>>>> 711aff66c90b4bc4dac7fe9e2844877ed5b770d6
             </select> -->
-        Я трачу <b>XX</b> секунд
     </div>
+    <!-- <div class="results-block">
+        Каждый месяц -->
+    <!-- Я трачу <b>XX</b> секунд
+    </div> -->
     <div class="count-results-button">
-        <input value="Count"
-            onclick="CalculateTime()"
-            type="button">
+        <input value="Count" onclick="CalculateTime()" type="button">
     </div>
 </main>
 
