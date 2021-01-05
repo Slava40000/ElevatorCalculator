@@ -5,5 +5,7 @@
         let speed = document.getElementById('elevators-speed').value;
         let rides = document.getElementById('rides-per-day').value;
         let days = document.getElementById('trips-in-x-days').value;
-        alert("Столько времени я еду в лифте " + floor*speed*rides*days + " секунд");
+        let number =Math.ceil (Math.random () * 20); 
+        alert("Столько времени я еду в лифте " + floor*speed*rides*days*number + " секунд");
+        
 }
