@@ -9,4 +9,3 @@ function CalculateTime(){
 }
 
 // nomer-etaja.addEventListener('input', e => span.innerText = e.target.value)
-
