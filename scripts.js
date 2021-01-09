@@ -2,6 +2,7 @@ let floor, speed, rides, days, randomNumber, timeInElevator
 
 function CalculateTime() {
     floor = document.getElementById('floor-number').value;
+      if ( floor > 20) alert( 'Вы врете!' );
     speed = document.getElementById('elevators-speed').value;
     rides = document.getElementById('rides-per-day').value;
     days = document.getElementById('time-interval').value;
