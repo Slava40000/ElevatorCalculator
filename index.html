@@ -13,17 +13,18 @@
     </div>
 
     <div>  
-    <input type="checkbox" id="Math-floor-selector">
-    <lebel for="">рандомный этаж</lebel>
+    <input type="checkbox" id="random-checkbox">
+    Генератор случайного этажа <!--рандомные этажи-->
+    <!-- <lebel for="">рандомный этаж</lebel> -->
     </div>
 
     <div class="floor-block">
         Я живу на
         <input id="floor-number" type="number" min="1" max="100">
         этаже
-        <select name="floor-selector" id="floor-number-selector">
-            <option value="1">максимальный этаж</option>
-        </select>
+
+        Максимальный этаж
+        <input id="max-floor-number" type="number" min="1" max="100">
     </div>
     <div class="rides-per-day-block">
         Каждый день я езжу на лифте
@@ -38,11 +39,10 @@
     </div>
     <div class="time-interval-block">
         Показать результат за
-        <input id="time-interval" type="number" min="1" max="100000">
-        дней
+        <!-- <input id="time-interval" type="number" min="1" max="100000"> -->
         <!-- dropdown для выбора интервала(день/месяц/год) -->
         <br>
-        <select name="interval-selector" id="time-interval-selector">
+        <select name="interval-selector" id="time-interval"> <!--выбор количества дней -->
             <option value="1">День</option>
             <option value="30">Месяц</option>
             <option value="365">Год</option>
