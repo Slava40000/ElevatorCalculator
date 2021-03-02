@@ -1,4 +1,4 @@
-let floor, speed, rides, days, randomCheckbox, randomNumber, timeInElevator, maxFloor
+let floor, speed, rides, days, randomCheckbox, randomNumber, secondsInElevator, maxFloor, floorCheck
 
 function CalculateTime() {
     floor = +document.getElementById('floor-number').value;
@@ -9,10 +9,18 @@ function CalculateTime() {
     randomCheckbox = document.getElementById('random-checkbox').checked;
     randomNumber = randomCheckbox ? Math.floor(Math.random() * 10) + 1 : 1;
     secondsInElevator = floor * speed * rides * days * randomNumber;
-    // result = timeInElevator;
-    result = floor > maxFloor ? "Лжец и подлец" : "Время езды в лифте: " + secondsInElevator + " секунд или " + (secondsInElevator / 60).toFixed(2) + " минут";
+    floorCheck = floor > maxFloor
+    if (floorCheck) {
+        result = "Лжец и подлец";
+    }  else {
+        result = "Время езды в лифте: " + secondsInElevator + " секунд или " + (secondsInElevator / 60).toFixed(2) + " минут";
+    } 
     document.getElementById("time-result").innerHTML = result;
 }
 
-// nomer-etaja.addEventListener('input', e => span.innerText = e.target.value)
+function InsertTime(floorCheck, secondsInElevator) {
+
+}
+
+// nomer-etaja.addEventListener('input', e => span.innerText = e.target.value) // example of clear code
 
