@@ -8,9 +8,9 @@ function CalculateTime() {
     days = document.getElementById('time-interval').value;
     randomCheckbox = document.getElementById('random-checkbox').checked;
     randomNumber = randomCheckbox ? Math.floor(Math.random() * 10) + 1 : 1;
-    timeInElevator = floor * speed * rides * days * randomNumber;
+    secondsInElevator = floor * speed * rides * days * randomNumber;
     // result = timeInElevator;
-    result = floor > maxFloor ? "Лжец и подлец" : "Время езды в лифте: " + timeInElevator + " секунд или " + timeInElevator / 60 + " минут";
+    result = floor > maxFloor ? "Лжец и подлец" : "Время езды в лифте: " + secondsInElevator + " секунд или " + (secondsInElevator / 60).toFixed(2) + " минут";
     document.getElementById("time-result").innerHTML = result;
 }
 
