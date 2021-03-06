@@ -2,12 +2,13 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href= "styles.css"/>
+    <link rel="stylesheet" href= "https://unpkg.com/98.css@0.1.4/build/98.css"/>
     <script src="scripts.js"></script>
     <title>Elevator 40000</title>
 </head>
 
-<main>
+<main class="window" style="margin: 0auto; width: 550px">
     <div class="header-text">
         Elevator Calculator
     </div>
@@ -19,12 +20,15 @@
     </div>
 
     <div class="floor-block">
+      <p>
         Я живу на
         <input id="floor-number" type="number" min="1" max="100">
         этаже
-
+      </p>
+      <p>
         Максимальный этаж
         <input id="max-floor-number" type="number" min="1" max="100">
+      </p>
     </div>
     <div class="rides-per-day-block">
         Каждый день я езжу на лифте
