@@ -17,6 +17,13 @@ function CalculateTime() {
     } 
     document.getElementById("time-result").innerHTML = result;
 }
+window.onload = function() {
+    document.getElementById('floor-number').addEventListener('input', CalculateTime);
+    document.getElementById('max-floor-number').addEventListener('input', CalculateTime);
+    document.getElementById('elevator-speed').addEventListener('input', CalculateTime);
+    document.getElementById('rides-per-day').addEventListener('input', CalculateTime);
+    document.getElementById('time-interval').addEventListener('change', CalculateTime);
+}
 
 function InsertTime(floorCheck, secondsInElevator) {
 
