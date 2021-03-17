@@ -7,7 +7,7 @@ function CalculateTime() {
     rides = document.getElementById('rides-per-day').value;
     days = document.getElementById('time-interval').value;
     randomCheckbox = document.getElementById('random-checkbox').checked;
-    randomNumber = randomCheckbox ? Math.floor(Math.random() * 10) + 1 : 1;
+    randomNumber = randomCheckbox ? Math.floor(Math.random() * maxFloor) + 1 : 1;
     secondsInElevator = floor * speed * rides * days * randomNumber;
     floorCheck = floor > maxFloor
     if (floorCheck) {
