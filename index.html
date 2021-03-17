@@ -40,8 +40,12 @@
     <div class="speed-block">
         <!-- Скорость лифта: -->
         <!-- <input type="range" min="1" max="10"> -->
-        Секунд на каждый этаж:
-        <input id="elevator-speed" type="number" step="0.25" min="0" max="10">
+        Скорость лифта:
+        <select name="speed-selector" id="elevator-speed">
+            <option value="1.6">медленно</option>
+            <option value="4">умеренно</option>
+            <option value="6">быстро</option>
+        </select>
     </div>
     <div class="time-interval-block">
         Показать результат за
