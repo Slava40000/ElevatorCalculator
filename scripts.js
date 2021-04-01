@@ -13,7 +13,17 @@ function CalculateTime() {
     if (floorCheck) {
         result = "Лжец и подлец";
     }  else {
-        result = "Время езды в лифте: " + secondsInElevator + " секунд или " + (secondsInElevator / 60).toFixed(2) + " минут";
+        // result = "Время езды в лифте: " + secondsInElevator + " секунд или " + (secondsInElevator / 60).toFixed(2) + " минут";
+        var sec = 1728 ;
+        2
+        var h = sec/3600 ^ 0 ;
+        3
+        var m = (sec-h*3600)/60 ^ 0 ;
+        4
+        var s = sec-h*3600-m*60 ;
+        5
+        alert((h<10?"0"+h:h)+" ч. "+(m<10?"0"+m:m)+" мин. "+(s<10?"0"+s:s)+" сек.") ;
+        
     } 
     document.getElementById("time-result").innerHTML = result;
 }
