@@ -12,17 +12,17 @@ function CalculateTime() {
     floorCheck = floor > maxFloor
     if (floorCheck) {
         result = "Лжец и подлец";
-    }  else {
+    } else {
         // result = "Время езды в лифте: " + secondsInElevator + " секунд или " + (secondsInElevator / 60).toFixed(2) + " минут";
-        let h = secondsInElevator  / 3600 ^ 0 ;
-        let m = (secondsInElevator  - h * 3600) / 60 ^ 0 ;
-        let s = secondsInElevator  - h * 3600 - m * 60 ;
-        result = (h < 10 ? "0" + h : h) + " ч. " + (m < 10 ? "0" + m : m) + " мин. " + (s < 10 ? "0" + s : s)+ " сек.";
-        
-    } 
+        let h = secondsInElevator / 3600 ^ 0;
+        let m = (secondsInElevator - h * 3600) / 60 ^ 0;
+        let s = secondsInElevator - h * 3600 - m * 60;
+        result = (h < 10 ? "0" + h : h) + " ч. " + (m < 10 ? "0" + m : m) + " мин. " + (s < 10 ? "0" + s : s) + " сек.";
+
+    }
     document.getElementById("time-result").innerHTML = result;
 }
-window.onload = function() {
+window.onload = function () {
     document.getElementById('floor-number').addEventListener('input', CalculateTime);
     document.getElementById('max-floor-number').addEventListener('input', CalculateTime);
     document.getElementById('elevator-speed').addEventListener('input', CalculateTime);

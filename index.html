@@ -2,69 +2,65 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href= "styles.css"/>
-    <link rel="stylesheet" href= "https://unpkg.com/98.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
     <script src="scripts.js"></script>
     <title>Elevator 40000</title>
 </head>
 
 <main class="window" style="margin: 0auto; width: 550px">
- <h4>
-    <div class="header-text">
-        Elevator Calculator
-    </div>
+    <h4>
+        <div class="header-text">
+            Elevator Calculator
+        </div>
 
-    <div>  
-    <input type="checkbox" id="random-checkbox">
-    <label for="random-checkbox"></label>
-    Генератор случайного этажа <!--рандомные этажи-->
-    <!-- <lebel for="">рандомный этаж</lebel> -->
-    </div>
+        <div>
+            <input type="checkbox" id="random-checkbox">
+            <label for="random-checkbox"></label>
+            Генератор случайного этажа
+            <!--рандомные этажи-->
+            <!-- <lebel for="">рандомный этаж</lebel> -->
+        </div>
 
-    <div class="floor-block">
-      <p>
-        Я живу на
-        <input id="floor-number" type="number" min="1" max="100">
-        этаже
-      </p>
-      <p>
-        Максимальный этаж
-        <input id="max-floor-number" type="number" min="1" max="100">
-      </p>
-    </div>
-    <div class="rides-per-day-block">
-        Каждый день я езжу на лифте
-        <input id="rides-per-day" type="number" min="1" max="100">
-        раз(а)
-    </div>
-    <div class="speed-block">
-        <!-- Скорость лифта: -->
-        <!-- <input type="range" min="1" max="10"> -->
-        Скорость лифта:
-        <select name="speed-selector" id="elevator-speed">
-            <option value="2">медленно</option>
-            <option value="0.75">умеренно</option>
-            <option value="0.5">быстро</option>
-        </select>
-    </div>
-    <div class="time-interval-block">
-        Показать результат за
-        <br>
-        <select name="interval-selector" id="time-interval">
-            <option value="1">День</option>
-            <option value="30">Месяц</option>
-            <option value="365">Год</option>
-        </select>
-    </div>
-    <!-- <div class="results-block">
+        <div>
+            Я живу на
+            <input id="floor-number" type="number" min="1" max="100">
+            этаже
+        </div>
+        <div>
+            Максимальный этаж
+            <input id="max-floor-number" type="number" min="1" max="100">
+        </div>
+        <div class="rides-per-day-block">
+            Каждый день я езжу на лифте
+            <input id="rides-per-day" type="number" min="1" max="100">
+            раз(а)
+        </div>
+        <div class="speed-block">
+            <!-- Скорость лифта: -->
+            <!-- <input type="range" min="1" max="10"> -->
+            Скорость лифта:
+            <select name="speed-selector" id="elevator-speed">
+                <option value="2">медленно</option>
+                <option value="0.75">умеренно</option>
+                <option value="0.5">быстро</option>
+            </select>
+        </div>
+        <div class="time-interval-block">
+            Показать результат за
+            <br>
+            <select name="interval-selector" id="time-interval">
+                <option value="1">День</option>
+                <option value="30">Месяц</option>
+                <option value="365">Год</option>
+            </select>
+        </div>
+        <!-- <div class="results-block">
         Итого я трачу X времени
     </div> -->
-    <hr/>
-    <div class="count-results-button">
-        <input value="Count" onclick="CalculateTime()" type="button">
-    </div>
-    <p id="time-result">результат</p>
-</h4>
+        <hr />
+        <div id="time-result">Результат</div>
+    </h4>
 </main>
 
 </html>
