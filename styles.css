@@ -15,16 +15,12 @@ main {
 }
 
 main div {
-    width: 60%;
+    width: 70%;
     padding: 20px;
     overflow: auto;
 }
 
-.header-text{
+.header-text {
     color: rgb(112, 6, 6);
     font-size: 26px;
-}
-
-.checkbox {
-    color:crimson;
 }
